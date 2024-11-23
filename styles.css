@@ -1,4 +1,5 @@
 body {
+	
     height: 100vh;
     display: grid;
     justify-content: center; /* Centra horizontalmente */
@@ -7,8 +8,9 @@ body {
     width: 80%;
     max-width: 1200px;
     margin: auto;
+    text-align: center;
    
-    background-color: #ececec;
+    background-color: white;
 
 }
 
@@ -28,10 +30,10 @@ body {
     text-align: center;
 }
 .nosCasamos{
-    font-size: 40px; /* Tamaño de fuente */
+    font-size: 20px; /* Tamaño de fuente */
 }
 .nombresNovios{
-    font-size: 80px; /* Tamaño de fuente */
+    font-size: 50px; /* Tamaño de fuente */
     font-family: "Parisienne", serif;
     font-weight: 400;
     font-style: normal;
@@ -50,6 +52,13 @@ body {
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
     display: grid;
+    padding: 60px;
+    text-align: center;
+
+    font-family: "Merienda", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 /*-- 3. PADRES ---------------------------------------------------------*/
