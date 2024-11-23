@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Español -->
+<head>
+    <meta charset="UTF-8"> <!-- Español -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merienda:wght@300..900&family=Parisienne&family=Rouge+Script&display=swap" rel="stylesheet">
+
+	<title>Invitación Boda</title>
+	<!--Favicon (logo navegador)-->
+	<link rel="icon" href="logo.ico" type="image/x-icon"> 
+
+	<!-- styles.css-->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Música -->
+    <audio autoplay loop>
+        <source src="musicaFondo.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <!-- 1. INICIO ------------------------------------------------>
+    <div class="_1_INICIO">
+    	<a class="nosCasamos"> ¡Nos casamos! </a>
+
+    	<a class="nombresNovios"> Jing Jing & Daniel</a>
+
+        <a class="fecha"> 01 de Febrero 2025</a>
+    </div>
+
+    <!-- 2. FRASE ------------------------------------------------>
+    <div class="_2_FRASE"> 
+        <a class="textoinvitacion"> A veces lo que empieza como una locura se convierte en lo mejor de tu vida. </a>
+    </div>
+
+    <!-- 3. PADRES ------------------------------------------------>
+    <div class="_3_PADRES">
+        <p class="">En compañía de nuestros padres</p>
+        
+        <p class=""> Padres de la novia</p>
+        <p>Cai Yufeug</p>
+        <p>Jing Hengxín</p>
+
+        <p class="">Padres del novio</p>
+        <p>María Magdalena Ramírez</p>
+        <p>Fausto Pérez</p>
+
+        <p>Nos complace invitarte a ser parte de este gran día.</p>
+    </div>
+
+    <!-- 4. DIAS_FALTAN --------------------------------------------->
+    <div class="_4_DIAS_FALTAN">
+        <p id="titulo">Faltan</p>
+        <div id="contador">
+            <div class="tiempo" id="dias">
+                <span></span>
+                <p>Días</p>
+            </div>
+
+            <div class="tiempo">
+                <span>:</span>
+            </div>
+
+            <div class="tiempo" id="horas">
+                <span></span>
+                <p>Horas</p>
+            </div>
+
+            <div class="tiempo">
+                <span>:</span>
+            </div>
+
+            <div class="tiempo" id="minutos">
+                <span></span>
+                <p>Minutos</p>
+            </div>
+
+            <div class="tiempo">
+                <span>:</span>
+            </div>
+
+            <div class="tiempo" id="segundos">
+                <span></span>
+                <p>Segundos</p>
+            </div>
+        </div>
+        <a id="titulo">para nuestra ceremonia</a>
+        <p></p>
+        <script>
+
+            // Definir la fecha de destino
+            const fechaDestino = new Date("Feb 01, 2025 00:00:00").getTime();
+
+            // Actualizar la cuenta regresiva cada segundo
+            const intervalo = setInterval(function() {
+                const ahora = new Date().getTime();
+                const diferencia = fechaDestino - ahora;
+
+                // Calcular días, horas, minutos y segundos restantes
+                const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+                const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+                const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+                // Actualizar los valores en el HTML
+                document.getElementById("dias").children[0].textContent = dias < 10 ? "0" + dias : dias;
+                document.getElementById("horas").children[0].textContent = horas < 10 ? "0" + horas : horas;
+                document.getElementById("minutos").children[0].textContent = minutos < 10 ? "0" + minutos : minutos;
+                document.getElementById("segundos").children[0].textContent = segundos < 10 ? "0" + segundos : segundos;
+
+                // Si la cuenta regresiva ha terminado
+                if (diferencia < 0) {
+                    clearInterval(intervalo);
+                    document.getElementById("contador").innerHTML = "<h2>¡El tiempo ha llegado!</h2>";
+                }
+            }, 1000);
+        </script>
+    </div>
+    <!-- 5. DONDE_CUANDO --------------------------------------------->
+    <div class="_5_DONDE_CUANDO">
+        <div class="">
+            <p id="titulo">Dónde y Cuándo</p>
+            <p>Hacienda Panoaya</p>
+            <br>
+            <p>Castillo de los Venados</p>
+            <br>
+            <p>Amecameca Estado de México</p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15076.937687442178!2d-98.7759569428833!3d19.141213270520886!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce3c8855555555%3A0xca8c5d1e698a5544!2sHacienda%20Panoaya!5e0!3m2!1ses-419!2smx!4v1732335340937!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="_5_1_organizacion">
+            
+        </div>
+    </div>
+    <div class="_6_CODIGO_VESTIMENTA"></div>
+    <div class="_7_REGALOS"></div>
+    <div class="_8_HOSPEDAJE"></div>
+
+</body>
+</html>
