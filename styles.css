@@ -1,5 +1,4 @@
 body {
-	
     height: 100vh;
     display: grid;
     justify-content: center; /* Centra horizontalmente */
@@ -9,7 +8,7 @@ body {
     max-width: 1200px;
     margin: auto;
     text-align: center;
-   
+    padding: 0;
     background-color: white;
 
 }
