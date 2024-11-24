@@ -25,9 +25,9 @@ body {
     justify-content: center; /* Centra los elementos verticalmente */
     align-items: center; /* Centra los elementos horizontalmente */
     color: white; /* Color de texto */
-    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5); /* Sombra para que el texto resalte */
+    text-shadow: 2px 2px 5px black; /* Sombra para que el texto resalte */
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
 }
 .nombresNovios{
     font-size: 50px; /* Tamaño de fuente */
@@ -36,13 +36,18 @@ body {
     font-style: normal;
 
     color: white; /* Color de texto */
-    text-shadow: 5px 5px 5px darkslategrey; /* Sombra para que el texto resalte */
+    text-shadow: 2px 2px 5px black; /* Sombra para que el texto resalte */
     text-align: center;
+}
+.fecha{
+
+     font-family: "Crimson Text", serif;
+
 }
 
 /*-- 2. FRASE ---------------------------------------------------------*/
 ._2_FRASE{
-    background-color: #ffcfad;
+    background-color: #e6d0b1;
     height: 180px;
     display: grid;
     margin: 20 auto; /* Centra la página */
@@ -52,14 +57,16 @@ body {
     padding: 60px;
     text-align: center;
 
-    font-family: "Merienda", serif;
+     font-family: "IM Fell French Canon", serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
+    color:#8a6662;
 }
 
 /*-- 3. PADRES ---------------------------------------------------------*/
 ._3_PADRES{
+    background-color: #ede0cf;
     margin: 20 auto; /* Centra la página */
     height: 700px; /* Ocupa toda la altura de la ventana */
     
@@ -69,10 +76,16 @@ body {
     font-weight: 400;
     font-size: 35px;
 }
+#padres{
+     font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
 /*-- 4. DIAS QUE FALTAN ---------------------------------------------------------*/
 ._4_DIAS_FALTAN{
+    background-color: #ede0cf;
     margin: 20 auto; /* Centra la página */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
@@ -80,7 +93,6 @@ body {
     display: grid;
 
     background-size: 30px;
-    background-color: beige;
 }
     #contador {
         display: flex;
@@ -101,6 +113,7 @@ body {
 
 /*-- 5. DONDE Y CUANDO ---------------------------------------------------------*/
 ._5_DONDE_CUANDO{
+    background-color: #ede0cf;
     margin: 20 auto; /* Centra la página */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
