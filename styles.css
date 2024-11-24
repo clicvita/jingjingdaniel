@@ -4,8 +4,8 @@ body {
     justify-content: center; /* Centra horizontalmente */
     align-items: center;    /* Centra verticalmente */
     /*display: flex; /* Activa el modelo flexbox */
-    width: 80%;
-    max-width: 1200px;
+    /*width: 80%;*/
+    max-width: auto;
     margin: auto;
     text-align: center;
     padding: 0;
