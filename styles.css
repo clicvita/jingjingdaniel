@@ -27,9 +27,7 @@ body {
     color: white; /* Color de texto */
     text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5); /* Sombra para que el texto resalte */
     text-align: center;
-}
-.nosCasamos{
-    font-size: 20px; /* Tamaño de fuente */
+    font-size: 40px;
 }
 .nombresNovios{
     font-size: 50px; /* Tamaño de fuente */
@@ -63,10 +61,13 @@ body {
 /*-- 3. PADRES ---------------------------------------------------------*/
 ._3_PADRES{
     margin: 20 auto; /* Centra la página */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
     height: 700px; /* Ocupa toda la altura de la ventana */
-    display: grid;
+    
+}
+#nomPad{
+    font-family: "Mea Culpa", cursive;
+    font-weight: 400;
+    font-size: 35px;
 }
 
 
