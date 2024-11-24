@@ -12,6 +12,20 @@ body {
     background-color: #faf4eb;
 
 }
+.texto{
+    background-color: #e6d0b1;
+    height: 100px;
+    display: grid;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    display: grid;
+    padding: 70px;
+    text-align: center;
+     font-family: "IM Fell French Canon", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
 
 
 /* Contenedor con la imagen de fondo */
@@ -91,8 +105,11 @@ body {
 ._3_PADRES{
      border-bottom: 2px  solid #d2c2b0; 
     background-color: #ede0cf;
-    margin: 20 auto; /* Centra la página */
-    height: 700px; /* Ocupa toda la altura de la ventana */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding-bottom: 40px; /* Centra la página */
+    height: 500px; /* Ocupa toda la altura de la ventana */
+    display: grid;
     
 }
 #nomPad{
@@ -146,10 +163,17 @@ body {
     align-items: center; /* Centra verticalmente */
     height: 1200px; /* Ocupa toda la altura de la ventana */
     display: grid;
+        padding: 20px;
 }
 
     #titulo{
-        font-size: 50px; /* Tamaño de fuente */
+        font-size: 35px; /* Tamaño de fuente */
+        font-family: "Parisienne", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    #titulo2{
+        font-size: 30px; /* Tamaño de fuente */
         font-family: "Parisienne", serif;
         font-weight: 400;
         font-style: normal;
@@ -228,8 +252,42 @@ body {
 }
 
 ._6_CODIGO_VESTIMENTA{
+     border-bottom: 2px  solid #d2c2b0; 
 
+    background-color: #ede0cf;
+    margin: 20 auto; /* Centra la página */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 400px; /* Ocupa toda la altura de la ventana */
+    display: grid;
+        padding: 20px;
 }
+
+.iconFormal{
+    background-color: #ede0cf;
+    margin: 20 auto; /* Centra la página */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    display: grid;
+        padding: 20px;
+}
+#iconFormal{
+    width: 80px;
+    height: 80px;
+}
+
+._7_REGALOS{
+     border-bottom: 2px  solid #d2c2b0; 
+    background-color: #ede0cf;
+    margin: 20 auto; /* Centra la página */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 400px; /* Ocupa toda la altura de la ventana */
+    display: grid;
+        padding: 20px;
+}
+
+
 ._9_FINAL{
 
     position: relative; /* Posicionamiento necesario para el overlay */
