@@ -198,6 +198,28 @@ body {
         font-weight: 400;
         font-style: normal;
     }
+    #button {
+        border: 2px solid #d2c2b0; /* Corregí el borde */
+        border-radius:50px; /* Más redondeado */
+        background-color: #d2c2b0; /* Color de fondo inicial */
+        padding: 20px;
+        cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+        transition: all 0.3s ease; /* Suavizar las transiciones */
+}
+
+    /* Cambio de color al poner el cursor */
+    #button:hover {
+        background-color: #b59d8a; /* Color más oscuro al pasar el mouse */
+        border-color: #b59d8a; /* También cambia el color del borde */
+        transform: scale(1.05); /* Efecto de agrandamiento */
+    }
+
+    /* Cambio de color al hacer clic */
+    #button:active {
+        background-color: #a08470; /* Color aún más oscuro al hacer clic */
+        border-color: #a08470;
+        transform: scale(0.95); /* Efecto de presión */
+    }
 
 /* Estilo general para la línea del tiempo */
 .timeline {
