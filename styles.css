@@ -9,14 +9,14 @@ body {
     margin: auto;
     text-align: center;
     padding: 0;
-    background-color: white;
+    background-color: #faf4eb;
 
 }
 
 
 /* Contenedor con la imagen de fondo */
 /*-- 1. INICIO ---------------------------------------------------------*/
-._1_INICIO {
+._1_INICIO { 
     position: relative; /* Posicionamiento necesario para el overlay */
     
     background-image: url('https://cdn.pixabay.com/photo/2021/11/12/01/40/wedding-6787691_1280.jpg'); /* Ruta de tu imagen */
@@ -68,6 +68,8 @@ body {
 
 /*-- 2. FRASE ---------------------------------------------------------*/
 ._2_FRASE{
+     border-bottom: 2px  solid #d2c2b0; 
+     border-top: 2px solid #d2c2b0;
     background-color: #e6d0b1;
     height: 180px;
     display: grid;
@@ -87,6 +89,7 @@ body {
 
 /*-- 3. PADRES ---------------------------------------------------------*/
 ._3_PADRES{
+     border-bottom: 2px  solid #d2c2b0; 
     background-color: #ede0cf;
     margin: 20 auto; /* Centra la página */
     height: 700px; /* Ocupa toda la altura de la ventana */
@@ -106,6 +109,7 @@ body {
 
 /*-- 4. DIAS QUE FALTAN ---------------------------------------------------------*/
 ._4_DIAS_FALTAN{
+     border-bottom: 2px  solid #d2c2b0; 
     background-color: #ede0cf;
     margin: 20 auto; /* Centra la página */
     justify-content: center; /* Centra horizontalmente */
@@ -118,7 +122,7 @@ body {
     #contador {
         display: flex;
         justify-content: center;
-        gap: 20px;
+        
     }
     .tiempo {
         text-align: center;
@@ -134,11 +138,13 @@ body {
 
 /*-- 5. DONDE Y CUANDO ---------------------------------------------------------*/
 ._5_DONDE_CUANDO{
+     border-bottom: 2px  solid #d2c2b0; 
+
     background-color: #ede0cf;
     margin: 20 auto; /* Centra la página */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-    height: 700px; /* Ocupa toda la altura de la ventana */
+    height: 1200px; /* Ocupa toda la altura de la ventana */
     display: grid;
 }
 
@@ -149,6 +155,81 @@ body {
         font-style: normal;
     }
 
+    #tituloCelebracion{
+        font-size: 20px; /* Tamaño de fuente */
+        font-family: "Parisienne", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+/* Estilo general para la línea del tiempo */
+.timeline {
+    position: relative;
+    margin: 40px auto;
+    padding: 20px 0;
+    width: 80%;
+    max-width: 600px;
+    border-left: 3px solid #d2c2b0; /* Línea vertical */
+}
+
+/* Estilo de cada evento */
+.evento {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 40px; /* Espaciado a la izquierda */
+}
+
+/* Línea decorativa para conectar íconos */
+.evento::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #d2c2b0; /* Mismo color que la línea */
+    border: 3px solid white;
+    border-radius: 50%; /* Círculo */
+}
+
+/* Estilo para los íconos */
+.icono img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Opcional: redondea la imagen */
+    border: 2px solid #d2c2b0;
+    padding: 10px;
+}
+
+/* Estilo para el contenido */
+.contenido {
+    margin-left: 20px;
+    font-family: "Crimson Text", serif;
+    color: #333;
+}
+
+.contenido .hora {
+    font-weight: bold;
+    color: #b79268;
+    font-size: 18px;
+}
+
+.contenido p {
+    margin: 5px 0 0;
+    font-style: italic;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Opcional: Agregar animación */
+.evento:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+._6_CODIGO_VESTIMENTA{
+
+}
 ._9_FINAL{
 
     position: relative; /* Posicionamiento necesario para el overlay */
