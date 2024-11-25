@@ -217,6 +217,10 @@ body {
         background-color: #b59d8a; /* Color más oscuro al pasar el mouse */
         border-color: #b59d8a; /* También cambia el color del borde */
         transform: scale(1.05); /* Efecto de agrandamiento */
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
     }
 
     /* Cambio de color al hacer clic */
@@ -224,6 +228,10 @@ body {
         background-color: #a08470; /* Color aún más oscuro al hacer clic */
         border-color: #a08470;
         transform: scale(0.95); /* Efecto de presión */
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
     }
 
 /* Estilo general para la línea del tiempo */
