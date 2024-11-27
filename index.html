@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Español -->
+<head>
+    <meta charset="UTF-8"> <!-- Español -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Amita:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=IM+Fell+French+Canon:ital@0;1&family=Imperial+Script&family=Lora:ital,wght@0,400..700;1,400..700&family=Mea+Culpa&family=Parisienne&family=Rouge+Script&family=Viaoda+Libre&display=swap" rel="stylesheet">
+
+    <title>Invitación Boda</title>
+    <!--Favicon (logo navegador)-->
+    <link rel="icon" href="logo.ico" type="image/x-icon"> 
+
+    <!-- styles.css-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Música -->
+    <audio autoplay loop>
+        <source src="musicaFondo.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <!-- 1. INICIO ------------------------------------------------>
+    <div class="_1_INICIO">
+
+        <a class="nombresNovios"> Jing </a>
+        <a class="nombresNovios"> & </a>
+        <a class="nombresNovios"> Daniel</a>
+
+        <a class="fecha"> 01 DE FEBRERO 2025</a>
+    </div>
+
+    <!-- 2. FRASE ------------------------------------------------>
+    <div class="_2_FRASE"> 
+        <a class="textoinvitacion"> Amor es solo una palabra, hasta que alguien llega para darle sentido. </a>
+    </div>
+
+    <!-- 3. PADRES ------------------------------------------------>
+    <div class="_3_PADRES">
+        <p id="nomPad">En compañía de nuestros padres</p>
+        
+        <a id="nomPad"> Padres de la novia</a>
+        <p id="padres">Cai Yufeng</p>
+        <p id="padres">Jing Hengxín</p>
+        <br>
+        <a id="nomPad">Padres del novio</a>
+        <p id="padres">María Magdalena Ramírez</p>
+        <p id="padres">Fausto Pérez</p>
+
+        <p id="texto">Nos complace invitarte a ser parte de este gran día de felicidad para nosotros.</p>
+    </div>
+
+    <!-- 4. DIAS_FALTAN --------------------------------------------->
+    <div class="_4_DIAS_FALTAN">
+        <p id="titulo">Faltan</p>
+        <div id="contador">
+            <div class="tiempo" id="dias">
+                <span></span>
+                <p>Días</p>
+            </div>
+
+            <div class="tiempo">
+                <span>:</span>
+            </div>
+
+            <div class="tiempo" id="horas">
+                <span></span>
+                <p>Horas</p>
+            </div>
+
+            <div class="tiempo">
+                <span>:</span>
+            </div>
+
+            <div class="tiempo" id="minutos">
+                <span></span>
+                <p>Minutos</p>
+            </div>
+
+            <div class="tiempo">
+                <span>:</span>
+            </div>
+
+            <div class="tiempo" id="segundos">
+                <span></span>
+                <p>Segundos</p>
+            </div>
+        </div>
+        <a id="titulo2">para nuestra ceremonia</a>
+        <p></p>
+        <script>
+
+            // Definir la fecha de destino
+            const fechaDestino = new Date("Feb 01, 2025 00:00:00").getTime();
+
+            // Actualizar la cuenta regresiva cada segundo
+            const intervalo = setInterval(function() {
+                const ahora = new Date().getTime();
+                const diferencia = fechaDestino - ahora;
+
+                // Calcular días, horas, minutos y segundos restantes
+                const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+                const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+                const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+                // Actualizar los valores en el HTML
+                document.getElementById("dias").children[0].textContent = dias < 10 ? "0" + dias : dias;
+                document.getElementById("horas").children[0].textContent = horas < 10 ? "0" + horas : horas;
+                document.getElementById("minutos").children[0].textContent = minutos < 10 ? "0" + minutos : minutos;
+                document.getElementById("segundos").children[0].textContent = segundos < 10 ? "0" + segundos : segundos;
+
+                // Si la cuenta regresiva ha terminado
+                if (diferencia < 0) {
+                    clearInterval(intervalo);
+                    document.getElementById("contador").innerHTML = "<h2>¡El tiempo ha llegado!</h2>";
+                }
+            }, 1000);
+        </script>
+    </div>
+    <!-- 5. DONDE_CUANDO --------------------------------------------->
+    <div class="_5_DONDE_CUANDO">
+        <div class="">
+            <p id="titulo">Dónde y Cuándo</p>
+            <p>Hacienda Panoaya</p>
+            <br>
+            <p>Castillo de los Venados</p>
+            <br>
+            <p>Amecameca Estado de México</p>
+            <br>
+
+            <button id="button" onclick="location.href='https://maps.app.goo.gl/4FpCjoQQamvMc2v19';"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> Ver mapa</button> 
+        </div>
+        <br>
+        <br>
+<p id="texto">Te compartimos los detalles de la celebración:</p>
+<div class="timeline">
+    <div class="evento">
+        <div class="icono">
+            <img src="https://cdn-icons-png.flaticon.com/128/2849/2849686.png" alt="Bienvenida">
+        </div>
+        <div class="contenido">
+            <span class="hora">13:00 hrs</span>
+            <p>Bienvenida</p>
+        </div>
+    </div>
+    <div class="evento">
+        <div class="icono">
+            <img src="https://cdn-icons-png.flaticon.com/128/2950/2950180.png" alt="Ceremonia">
+        </div>
+        <div class="contenido">
+            <span class="hora">14:00 hrs</span>
+            <p>Ceremonia</p>
+        </div>
+    </div>
+    <div class="evento">
+        <div class="icono">
+            <img src="https://cdn-icons-png.flaticon.com/128/2555/2555700.png" alt="Comida">
+        </div>
+        <div class="contenido">
+            <span class="hora">16:00 hrs</span>
+            <p>Comida</p>
+        </div>
+    </div>
+</div>
+</div>
+    <div class="_6_CODIGO_VESTIMENTA">
+        <p id="titulo">Código de vestimenta</p>
+        <a id="titulo2">Formal</a>
+        <div class="iconFormal" ><img src="https://invitaciones.krema-mx.com/Content/img/icons/codigo-de-vestir.png" alt="Formal" id="iconFormal"></div>
+    </div>
+    <div class="_7_REGALOS">
+        <p id="titulo">Sobre los regalos</p>
+        <a id="regalos">Por la tradición y cultura de la novia, si quieres dar un pequeño presente, te invitamos a considerar regalar un sobre rojo con una contribución económica en lugar de un obsequio material. Este gesto simboliza buenos deseos, prosperidad y felicidad para nuestra nueva vida juntos.</a>
+    </div>
+    <div class="_8_FINAL">
+       <a id="numTelefono">Favor de confirmar su asistencia.</a>
+    </div>
+    <div class="_9_FOTOFINAL"></div>
+
+</body>
+</html>
