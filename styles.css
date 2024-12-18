@@ -57,7 +57,7 @@ font-family: "Parisienne", serif;
 
 }
 /* Capa oscura superpuesta */
-._1_INICIO::before {
+/*._1_INICIO::before {
     content: '';
     position: absolute;
     top: 0;
@@ -67,13 +67,13 @@ font-family: "Parisienne", serif;
     background-color: black; /* Oscurecimiento */
     opacity: 0.2; /* Ajusta la intensidad de la oscuridad (0.1 a 1) */
     z-index: 1; /* Coloca la capa debajo del contenido */
-}
+}*/
 
 /* Asegúrate de que el contenido esté encima de la superposición */
-._1_INICIO > * {
+/*._1_INICIO > * {
     position: relative;
     z-index: 2;
-}
+}*/
 .nombresNovios{
     font-size: 50px; /* Tamaño de fuente */
     font-family: "Parisienne", serif;
