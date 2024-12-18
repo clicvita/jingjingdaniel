@@ -43,7 +43,7 @@ font-family: "Parisienne", serif;
 ._1_INICIO { 
     position: relative; /* Posicionamiento necesario para el overlay */
     
-    background-image: url('https://cdn.pixabay.com/photo/2021/11/12/01/40/wedding-6787691_1280.jpg'); /* Ruta de tu imagen */
+    background-image: url('fondo.jpeg'); /* Ruta de tu imagen */
     background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
     background-position: center; /* Centra la imagen */
     height: 700px; /* Ocupa toda la altura de la ventana */
