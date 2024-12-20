@@ -107,7 +107,7 @@ font-family: "Parisienne", serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
-    color:#8a6662;
+    color:black;
     font-family: "Parisienne", serif;
     font-size: 20px;
 }
@@ -354,7 +354,7 @@ font-family: "Parisienne", serif;
     display: grid;
     padding: 60px;
     text-align: center;
-    color:#8a6662;
+    color:black;
     font-size: 20px;
     font-family: "Parisienne", serif;
 }
