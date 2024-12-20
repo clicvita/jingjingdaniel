@@ -47,7 +47,7 @@ font-family: "Parisienne", serif;
     background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
     background-position: center; /* Centra la imagen */
     height: 750px; /* Ocupa toda la altura de la ventana */
-    display: grid;
+    /*display: grid;*/
     justify-content: center; /* Centra los elementos verticalmente */
     align-items: center; /* Centra los elementos horizontalmente */
     color: white; /* Color de texto */
