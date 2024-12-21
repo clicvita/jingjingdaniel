@@ -88,8 +88,8 @@ font-family: "Parisienne", serif;
     text-align: center;
 }
 .fecha{
-
-     font-family: "Crimson Text", serif;
+    font-size: 20px; /* Tamaño de fuente */
+    font-family: "Crimson Text", serif;
 
 }
 
