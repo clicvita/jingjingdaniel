@@ -89,7 +89,8 @@ font-family: "Parisienne", serif;
 }
 .fecha{
     font-size: 20px; /* Tamaño de fuente */
-    font-family: "Crimson Text", serif;
+
+     font-family: "Crimson Text", serif;
 
 }
 
@@ -112,7 +113,7 @@ font-family: "Parisienne", serif;
     font-style: normal;
     color:black;
     font-family: "Parisienne", serif;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 /*-- 3. PADRES ---------------------------------------------------------*/
@@ -125,23 +126,19 @@ font-family: "Parisienne", serif;
     height: auto; 
     display: grid;
     padding: 20px;
-
-        font-size: 20px;
+    font-size: 20px;
     
 }
 #nomPad{
-   
-  font-family: "Imperial Script", cursive;
-  font-weight: 400;
+   font-family: "Imperial Script", cursive;
   font-style: normal;
-
     font-weight: 400;
     font-size: 35px;
 }
 #padres{
    
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     font-family: "Parisienne", cursive;
 }
 
