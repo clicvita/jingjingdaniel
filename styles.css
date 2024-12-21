@@ -319,14 +319,13 @@ font-family: "Parisienne", serif;
 }
 .iconFormal{
     background-color: #ede0cf;
-    margin: 20 auto; /* Centra la página */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    margin: 20 auto; 
+    justify-content: center;
+    align-items: center; 
     display: grid;
     padding-bottom: 20px;
     font-family: "Parisienne", serif;
     padding: 50px;
-    background: transparent;
 }
 #iconFormal{
     width: 80px;
@@ -361,6 +360,14 @@ font-family: "Parisienne", serif;
     font-family: "Parisienne", serif;
 }
 
+.iconRegalos{
+    margin: 20 auto; 
+    justify-content: center; 
+    align-items: center;
+    display: grid;
+    padding-bottom: 20px;
+    background: transparent;
+}
 ._8_FINAL{
     border-bottom: 2px  solid #d2c2b0; 
     background-color: #ede0cf;
