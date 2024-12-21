@@ -326,11 +326,13 @@ font-family: "Parisienne", serif;
     padding-bottom: 20px;
     font-family: "Parisienne", serif;
     padding: 50px;
+    background: transparent;
 }
 #iconFormal{
     width: 80px;
     height: 80px;
     font-family: "Parisienne", serif;
+    background: transparent;
 }
 
 ._7_REGALOS{
