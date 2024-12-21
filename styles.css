@@ -374,7 +374,7 @@ font-family: "Parisienne", serif;
 
     position: relative; /* Posicionamiento necesario para el overlay */
     
-    background-image: url('https://cdn.pixabay.com/photo/2016/03/27/20/54/wedding-reception-1284245_960_720.jpg'); /* Ruta de tu imagen */
+    background-image: url('https://cafeversatil.com/noviasybodas/wp-content/uploads/2017/06/0001-5.jpg'); /* Ruta de tu imagen */
     background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
     background-position: center; /* Centra la imagen */
     height: 350px; /* Ocupa toda la altura de la ventana */
