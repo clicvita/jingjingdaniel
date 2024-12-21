@@ -335,10 +335,10 @@ font-family: "Parisienne", serif;
 ._7_REGALOS{
      border-bottom: 2px  solid #d2c2b0; 
     background-color: #ede0cf;
-    margin: 20 auto; /* Centra la página */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: auto; /* Ocupa toda la altura de la ventana */
+    margin: 20 auto; 
+    justify-content: center; 
+    align-items: center; 
+    height: auto;
     display: grid;
     font-family: "Parisienne", serif;
     padding-top: 20px;
@@ -348,9 +348,8 @@ font-family: "Parisienne", serif;
 #regalos{
     background-color: #e6d0b1;
     height: auto;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    display: grid;
+    justify-content: center; 
+    align-items: center;
     padding: 60px;
     text-align: center;
     color:black;
@@ -369,9 +368,9 @@ font-family: "Parisienne", serif;
     border-bottom: 2px  solid #d2c2b0; 
     background-color: #ede0cf;
     padding: 60px ;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: auto; /* Ocupa toda la altura de la ventana */
+    justify-content: center; 
+    align-items: center; 
+    height: auto; 
     font-size: 30px;
     font-style: bold;
  
