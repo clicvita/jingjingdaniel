@@ -360,14 +360,13 @@ font-family: "Parisienne", serif;
     font-family: "Parisienne", serif;
 }
 
-.iconRegalos{
-    margin: 20 auto; 
-    justify-content: center; 
-    align-items: center;
-    display: grid;
-    padding-bottom: 20px;
+#iconRegalos{
+    width: 80px;
+    height: 80px;
+    font-family: "Parisienne", serif;
     background: transparent;
 }
+
 ._8_FINAL{
     border-bottom: 2px  solid #d2c2b0; 
     background-color: #ede0cf;
