@@ -1,35 +1,33 @@
 body {
     height: 100vh;
     display: grid;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;    /* Centra verticalmente */
+    justify-content: center; 
+    align-items: center;    
     /*display: flex; /* Activa el modelo flexbox */
-   
     /*max-width: auto;*/
     width:350px;
     margin: auto;
     text-align: center;
     padding: auto;
     background-color: #faf4eb;
-
-font-family: "Parisienne", serif;
-
+    font-family: "Parisienne", serif;
 }
+
 .texto{
     text-align: center;
- font-size: 20px;
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+    font-size: 20px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 .textoRegalo{
     background-color: #e6d0b1;
     height: 100px;
     display: grid;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center; 
+    align-items: center; 
     padding: 70px;
     text-align: center;
      font-family: "IM Fell French Canon", serif;
